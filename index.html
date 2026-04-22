@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Computex - Technology Information Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <!-- HEADER -->
+        <div class="header">
+            <div class="company">Computex</div>
+            <nav class="head-nav">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+            <div class="actions">
+                <button class="sign-up">Sign Up</button>
+                <button class="sign-in">Sign In</button>
+            </div>
+        </div>
+
+        <!-- MAIN BODY -->
+        <div class="body">
+            <!-- SIDEBAR (TOPICS) -->
+            <div class="topics">
+                <div>Computers</div>
+                <div>Laptops</div>
+                <div>Smartphones</div>
+                <div>Tablets</div>
+                <div>Gaming</div>
+                <div>Smart-Home</div>
+            </div>
+
+            <!-- MAIN CONTENT AREA -->
+            <div class="content">
+                <iframe class="content-iframe" src="pages/main/Home.html"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- SIGN UP MODAL -->
+    <div id="signupModal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Sign Up</h2>
+            <input type="text" id="su-username" placeholder="Username">
+            <input type="password" id="su-password" placeholder="Password">
+            <button id="signupBtn">Create Account</button>
+            <button onclick="closeModal('signupModal')">Close</button>
+        </div>
+    </div>
+
+    <!-- SIGN IN MODAL -->
+    <div id="signinModal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Sign In</h2>
+            <input type="text" id="si-username" placeholder="Username">
+            <input type="password" id="si-password" placeholder="Password">
+            <button id="signinBtn">Sign In</button>
+            <button onclick="closeModal('signinModal')">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
